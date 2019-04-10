@@ -25,7 +25,7 @@ RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD
 
 RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn
 
-RUN pip3 --no-cache-dir install dill bleach namedtupled
+RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb
 #
 # Expose port 80
 #EXPOSE 80
