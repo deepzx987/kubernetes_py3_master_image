@@ -27,7 +27,7 @@ RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn
 
 RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb
 
-RUN pip3 --no-cache-dir install seaborn
+RUN pip3 --no-cache-dir install seaborn imblearn
 
 #
 # Expose port 80
