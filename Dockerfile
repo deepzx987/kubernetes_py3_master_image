@@ -20,14 +20,49 @@ RUN apt-get update
 
 #
 RUN apt-get install -y wget vim htop fish datamash
- 
-RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD
+RUN apt-get update --fix-missing -qq && apt-get install --no-install-recommends -y autoconf \
+		automake \  
+		bc \
+		build-essential \
+		bzip2 \
+		cmake \
+		curl \
+		g++ \
+		gfortran \
+		git \
+		language-pack-en \
+		libatlas-dev \
+		libatlas3gf-base \
+		libcurl4-openssl-dev \ 
+		libffi-dev \
+		libfreetype6-dev \
+		libglib2.0-0 \   
+		libhdf5-dev \
+		liblcms2-dev \
+		libopenblas-dev \		
+		libssl-dev \
+		libtiff5-dev \
+		libtool \
+		libwebp-dev \
+		libzmq3-dev \
+		make \
+		nano \
+		pkg-config \
+		software-properties-common \
+		unzip \
+		wget \
+		zlib1g-dev \
+		qt5-default \
+		libvtk6-dev \
+		zlib1g-dev
 
-RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn
+RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD beautifulsoup4
 
-RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb
+RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn hdf5 ipykernel lxml
 
-RUN pip3 --no-cache-dir install seaborn imblearn pycm
+RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb h5py ipython ipywidgets jupyter
+
+RUN pip3 --no-cache-dir install seaborn imblearn pycm numpy pandas pillow rpy2 scikit-image
 
 #
 # Expose port 80
