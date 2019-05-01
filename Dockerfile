@@ -21,15 +21,15 @@ RUN apt-get update
 #
 RUN apt-get install -y wget vim htop fish datamash
 
-RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD beautifulsoup4
+RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD 
 
-RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn hdf5 ipykernel lxml
+RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn 
 
-RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb h5py ipython ipywidgets jupyter
+RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb h5py ipython 
 
-RUN pip3 --no-cache-dir install seaborn imblearn pycm numpy pandas pillow rpy2 scikit-image
+RUN pip3 --no-cache-dir install seaborn imblearn pycm numpy pandas pillow scikit-image
 
-RUN pip3 --no-cache-dir install morph-net==0.2.1
+RUN pip3 --no-cache-dir install morph-net
 
 #
 # Expose port 80
