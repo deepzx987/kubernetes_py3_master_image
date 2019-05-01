@@ -29,8 +29,6 @@ RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb h5py ipython
 
 RUN pip3 --no-cache-dir install seaborn imblearn pycm numpy pandas pillow scikit-image
 
-RUN pip3 --no-cache-dir install morph-net
-
 #
 # Expose port 80
 #EXPOSE 80
