@@ -21,7 +21,7 @@ RUN apt-get update
 #
 RUN apt-get install -y wget vim htop fish datamash
 
-RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD 
+RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD tqdm
 
 RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn python_speech_features
 
