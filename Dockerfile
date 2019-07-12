@@ -25,7 +25,7 @@ RUN pip3 --no-cache-dir install docopt joblib natsort scipy EMD-signal PyEMD tqd
 
 RUN pip3 --no-cache-dir install tqdm keras matplotlib librosa scikit-learn python_speech_features
 
-RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb h5py ipython 
+RUN pip3 --no-cache-dir install dill bleach namedtupled wfdb h5py ipython opencv-python
 
 RUN pip3 --no-cache-dir install seaborn imblearn pycm numpy pandas pillow scikit-image
 
