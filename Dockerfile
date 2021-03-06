@@ -6,6 +6,7 @@
 # The line below states we will base our new image on the Latest Official Ubuntu 
 # Remove py3 for python 2 image
 FROM tensorflow/tensorflow:latest-gpu-py3
+
 #ENV http_proxy http://172.16.117.121:3128
 #ENV https_proxy http://172.16.117.121:3128
 
